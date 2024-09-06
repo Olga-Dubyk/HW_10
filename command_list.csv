@@ -1,0 +1,67 @@
+    1  -c && rm ~/.bash_history
+    2  -c rm ~/. bash-history
+    3  -c
+    4  rm ~/. bash_history
+    5  -c
+    6  rm ~/.bash_history
+    7  git config --global user.name "Olga Dubyk"
+    8  git config --global user.email dubyk.olga2609@gmail.com
+    9  clear
+   10  git config --global user.name "Olga Dubyk"
+   11  git config --global user.email dubyk.olga2609@gmail.com
+   12  git clone https://github.com/Olga-Dubyk/HW_10.git
+   13  clear
+   14  git clone https://github.com/Olga-Dubyk/HW_10.git
+   15  cd HW_10
+   16  touch empty .txt
+   17  touch text_ignore.txt
+   18  vim .gitignore
+   19  cd HW_10
+   20  vim .gitignore
+   21  git status
+   22  git add text_ignore.txt
+   23  git status
+   24  vim .gitignore
+   25  echo text_ignore.txt > .gitignore
+   26  git add text_ignore.txt
+   27  git commit -m "text_ignore.txt added"
+   28  touch main_test.txt
+   29  git add .
+   30  git commit -m "main_test.txt added"
+   31  git checkout -b branch_develop
+   32  touch develop_test.txt
+   33  git add .
+   34  git commit -m 'develop_test.txt added'
+   35  vim develop_test.txt
+   36  echo GOIT > develop_test.txt
+   37  git status
+   38  git add .
+   39  git commit -m "develop_test.txt added"
+   40  git checkout branch_main
+   41  git checkout branch_master
+   42  git checkout main
+   43  git merge branch_develop
+   44  git log
+   45  git push
+   46  clear
+   47  cd HW_10
+   48  touch text_ignore.txt
+   49  echo text_ignore.txt > .gitignore
+   50  git status
+   51  git add .
+   52  git commit -m "text_ignore.txt was ignored"
+   53  touch main_test.txt
+   54  git add .
+   55  git commit -m "main_test.txt was added"
+   56  git checkout -b develop
+   57  touch develop_test.txt
+   58  git add .
+   59  git commit -m "develop_test.txt was added"
+   60  echo GOIT > develop_test.txt
+   61  git status
+   62  git add .
+   63  git commit -m "develop_test.txt was changed"
+   64  git checkout main
+   65  git merge develop
+   66  git log
+   67  history > command_list.csv
